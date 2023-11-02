@@ -14,6 +14,7 @@ timezone: ''
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
 url: https://creatixchu.github.io/cxt-blog/
+root: /cxt-blog
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -61,7 +62,7 @@ prismjs:
 # per_page: Posts displayed per page. (0 = disable pagination)
 # order_by: Posts order. (Order by date descending by default)
 index_generator:
-  path: '/cxt-blog'
+  path: ''
   per_page: 10
   order_by: -date
 
@@ -105,4 +106,4 @@ deploy:
   type: git
   repo: https://github.com/CreatixChu/cxt-blog
   branch: gh-pages
-  message: "Site updated: {{ now('YYYY-MM-DD HH:mm:ss') }}"
+  message: "Site updated: {{ now('DD HH:mm:ss') }}"
